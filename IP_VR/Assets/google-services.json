@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "57333499924",
+    "firebase_url": "https://ip-project-2fdf7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ip-project-2fdf7",
+    "storage_bucket": "ip-project-2fdf7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57333499924:android:592b12138cec856e9a7f01",
+        "android_client_info": {
+          "package_name": "com.company.IPunity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG7TcrEzYfoHJUZGhd-LBNf1pgjm-tNmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
