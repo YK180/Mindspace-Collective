@@ -183,6 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3733961237680195594}
+  - component: {fileID: 1935444357239979370}
   m_Layer: 0
   m_Name: bread_loaf
   m_TagString: Untagged
@@ -248,6 +249,28 @@ Transform:
   - {fileID: 1396389485748663412}
   m_Father: {fileID: 3497524109035234476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1935444357239979370
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016825568134782710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1059145216416390932
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +543,7 @@ GameObject:
   - component: {fileID: 6835626125592872781}
   - component: {fileID: 5708767761081924135}
   - component: {fileID: 9095994043626793798}
+  - component: {fileID: 7907605827447366927}
   m_Layer: 0
   m_Name: Bread_Box
   m_TagString: Untagged
@@ -595,6 +619,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7907605827447366927
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362508337223339766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1092522589903093775, guid: 3a5c97d95d5691b4a8c121715db23299, type: 3}
 --- !u!1 &1593538024141552433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3497524109035234476}
+  - component: {fileID: 8634644637001897801}
   m_Layer: 0
   m_Name: Bread Box
   m_TagString: Untagged
@@ -1587,6 +1634,28 @@ Transform:
   - {fileID: 7552664561142332434}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8634644637001897801
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599639169102713805}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3645154739635325516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,6 +2971,7 @@ GameObject:
   - component: {fileID: 6636541920701448425}
   - component: {fileID: 1146113383705920334}
   - component: {fileID: 4992555169054998385}
+  - component: {fileID: 4941491751493542869}
   m_Layer: 0
   m_Name: Bread_Box_Door
   m_TagString: Untagged
@@ -2978,6 +3048,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4941491751493542869
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538003720585892492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2582934638330351471, guid: 3a5c97d95d5691b4a8c121715db23299, type: 3}
 --- !u!1 &6605818298502981305
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,6 +3342,7 @@ GameObject:
   - component: {fileID: 7552664561142332434}
   - component: {fileID: 1512309821755023107}
   - component: {fileID: 6850791599979294773}
+  - component: {fileID: 3043510574029271844}
   m_Layer: 0
   m_Name: Bread_Slicee
   m_TagString: Untagged
@@ -3326,6 +3419,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3043510574029271844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777066595597303455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5161754466864310441, guid: 3a5c97d95d5691b4a8c121715db23299, type: 3}
 --- !u!1 &7830367829154712879
 GameObject:
   m_ObjectHideFlags: 0

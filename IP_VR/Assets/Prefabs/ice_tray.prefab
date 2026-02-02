@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 3289041665398329814}
   - component: {fileID: 7355158565524271867}
   - component: {fileID: 8733001010181221559}
+  - component: {fileID: 5931671217829973188}
   m_Layer: 0
   m_Name: ice_tray
   m_TagString: Untagged
@@ -173,3 +174,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5931671217829973188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6785136649079250314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7850973359205945150, guid: 3a5c97d95d5691b4a8c121715db23299, type: 3}
