@@ -105,3 +105,20 @@ IP_VR/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-13_7_0.so
 # Or use wildcards to cover future updates:
 **/Firebase/Plugins/x86_64/*.bundle
 **/Firebase/Plugins/x86_64/*.so
+
+# ================================
+# Local large Unity asset packages
+# ================================
+
+# Terrain sample assets (local only)
+Assets/TerrainSampleAssets/
+Assets/TerrainSampleAssets.meta
+
+# Folder for large imported asset packs (local only)
+Assets/Imported_Packages/
+Assets/Imported_Packages.meta
+
+# Auto-generated render pipeline resources (local)
+Assets/HDRPDefaultResources/
+Assets/HDRPDefaultResources.meta
+
