@@ -1098,6 +1098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XRI Global Keyboard Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2314523925997562666, guid: 763522a439f36ac4d881f5652181a2ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2314523925997562667, guid: 763522a439f36ac4d881f5652181a2ee, type: 3}
       propertyPath: m_PlayerRoot
       value: 
@@ -1829,6 +1833,7 @@ MonoBehaviour:
   emailField: {fileID: 374088982}
   passwordField: {fileID: 1711895785}
   statusText: {fileID: 2074330334}
+  nextSceneName: Menu
 --- !u!1 &902398839
 GameObject:
   m_ObjectHideFlags: 0
