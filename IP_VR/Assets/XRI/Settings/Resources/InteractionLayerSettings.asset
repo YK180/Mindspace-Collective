@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - banana
+  - strawberry and banana
+  - butter
+  - blueberry
   - 
   - 
   - 
@@ -40,8 +42,6 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Paper box
+  - Bread
   - Teleport
