@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
-    path: Assets/Scenes/YKScene.unity
+    path: Assets/Scenes/Login.unity
     guid: a7aafd84717f87d4bb3e46d56d2b5d14
   - enabled: 1
     path: Assets/Scenes/Menu.unity
