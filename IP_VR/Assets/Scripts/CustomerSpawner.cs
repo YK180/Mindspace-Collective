@@ -59,10 +59,9 @@ public class CustomerSpawner : MonoBehaviour
             customerAI = customer.AddComponent<CustomerAI>();
         }
         
-        // Assign settings
-        customerAI.orderPoint = orderPoint;
+        // Assign settings (new clean version only needs these)
         customerAI.possibleOrders = availableOrders;
-        customerAI.questionMarkPrefab = questionMarkPrefab;
+        customerAI.questionMarkButtonPrefab = questionMarkPrefab;
         
         currentCustomerCount++;
         

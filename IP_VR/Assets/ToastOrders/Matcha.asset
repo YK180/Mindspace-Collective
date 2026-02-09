@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderName: Matcha
   orderIcon: {fileID: 21300000, guid: 9ab961895e55e04499f00b600e7f19ef, type: 3}
-  description: Matcha
+  description: '- Spread matcha paste'
