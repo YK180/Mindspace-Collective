@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f41fcb1b650fb4f9a133b76ed37b09, type: 3}
-  m_Name: Chocolate_&_Banana
+  m_Name: Peanut Butter
   m_EditorClassIdentifier: 
-  orderName: Chocolate and Banana
-  orderIcon: {fileID: 0}
-  description: Chocolate and Banana
+  orderName: Peanut Butter
+  orderIcon: {fileID: 21300000, guid: 439e56aa9b8fb2e44964d7ba03eb5100, type: 3}
+  description: Peanut Butter
