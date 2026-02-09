@@ -10,7 +10,7 @@ public class MenuNavigation : MonoBehaviour
     private DatabaseReference dbReference;
 
     [Header("Scene Settings")]
-    public string loginSceneName = "Login"; // Exact name of your Login scene
+    public string loginSceneName = "Raphael_login"; // Exact name of your Login scene
 
     void Start()
     {

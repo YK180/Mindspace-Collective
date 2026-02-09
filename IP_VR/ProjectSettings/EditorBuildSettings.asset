@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
+    path: Assets/Scenes/Raphael_login.unity
+    guid: e07476fa481d1b24a984f245ad41b56f
+  - enabled: 1
+    path: Assets/Scenes/Raphael_menu.unity
+    guid: 2cb5a28159d64b84b9fab9673d9f1fd0
+  - enabled: 0
     path: Assets/Scenes/Login.unity
     guid: a7aafd84717f87d4bb3e46d56d2b5d14
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 4fbfeffbb0503834ba55b38435e74d17
   m_configObjects:
