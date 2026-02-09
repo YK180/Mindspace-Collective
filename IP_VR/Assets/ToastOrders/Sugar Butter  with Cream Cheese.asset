@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f41fcb1b650fb4f9a133b76ed37b09, type: 3}
-  m_Name: Cream_Cheese_with_Strawberries
+  m_Name: Sugar Butter  with Cream Cheese
   m_EditorClassIdentifier: 
-  orderName: Cream Cheese with Strawberries
+  orderName: Sugar Butter with Cream Cheese
   orderIcon: {fileID: 0}
-  description: Cream Cheese with Strawberries
+  description: Sugar Butter with Cream Cheese

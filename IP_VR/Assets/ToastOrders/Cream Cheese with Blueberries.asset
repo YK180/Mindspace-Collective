@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f41fcb1b650fb4f9a133b76ed37b09, type: 3}
-  m_Name: Cinnamon_Sugar_with_Cream_Cheese
+  m_Name: Cream Cheese with Blueberries
   m_EditorClassIdentifier: 
-  orderName: Cinnamon Sugar with Cream Cheese
+  orderName: Cream Cheese with Blueberries
   orderIcon: {fileID: 0}
-  description: Cinnamon Sugar with Cream Cheese
+  description: Cream Cheese with Blueberries

@@ -1,37 +1,26 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class QuestionMarkClickVR : MonoBehaviour
 {
     public CustomerAI customer;
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable interactable;
+    private bool hasBeenClicked = false;
 
-    void Awake()
+    // This works with VR controller collisions/triggers
+    void OnTriggerEnter(Collider other)
     {
-        // Add XR Simple Interactable if not already present
-        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
-        if (interactable == null)
+        // Check if a VR controller touched the question mark
+        if (!hasBeenClicked && (other.CompareTag("Player") || other.name.Contains("Controller") || other.name.Contains("Interactor")))
         {
-            interactable = gameObject.AddComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
-        }
-        
-        // Subscribe to select events (when VR controller clicks/pokes)
-        interactable.selectEntered.AddListener(OnSelect);
-    }
-
-    void OnDestroy()
-    {
-        // Clean up listener
-        if (interactable != null)
-        {
-            interactable.selectEntered.RemoveListener(OnSelect);
+            TriggerClick();
         }
     }
 
-    void OnSelect(SelectEnterEventArgs args)
+    // This can also be called from external scripts if needed
+    public void TriggerClick()
     {
-        if (customer != null)
+        if (!hasBeenClicked && customer != null)
         {
+            hasBeenClicked = true;
             customer.OnQuestionMarkClicked();
         }
     }
