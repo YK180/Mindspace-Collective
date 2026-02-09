@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd7d50e7dd0f6447bf0e6f4a94c01e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationOffset: 180
+  rotationOffset: 270
   possibleOrders: []
   questionMarkButtonPrefab: {fileID: 0}
   questionMarkOffset: {x: 0, y: 2.5, z: 0}
