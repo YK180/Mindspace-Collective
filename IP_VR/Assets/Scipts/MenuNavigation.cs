@@ -1,67 +1,63 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Firebase.Auth;
-using Firebase.Database;
-using Firebase.Extensions;
 
 public class MenuNavigation : MonoBehaviour
+
 {
-    private FirebaseAuth auth;
-    private DatabaseReference dbReference;
+    [Header("UI Panels")]
+    public GameObject mainMenusPanel;    // The main screen
+    public GameObject settingsPanel;     // The Settings screen
+    public GameObject leaderboardPanel; // The NEW Leaderboard panel
 
-    [Header("Scene Settings")]
-    public string loginSceneName = "Raphael_login"; // Exact name of your Login scene
+    [Header("Scene Transition (New Scene)")]
+    public string quitTargetSceneName = "Raphael_login";
 
-    void Start()
+
+    // Function to open the Leaderboard
+    public void OpenLeaderboard()
     {
-        // Initialize Firebase
-        auth = FirebaseAuth.DefaultInstance;
-        dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        // Hide other panels and show the leaderboard
+
+        if (mainMenusPanel != null) mainMenusPanel.SetActive(false);
+
+        if (settingsPanel != null) settingsPanel.SetActive(false);
+
+        if (leaderboardPanel != null) leaderboardPanel.SetActive(true);
+
+        Debug.Log("Leaderboard Panel Opened");
     }
 
-    // Call this function from your 'Quit' button's On Click() event
-    public void QuitAndSyncData()
+
+
+    // Function to go back to Main Menu from any panel
+    public void ReturnToMainMenu()
     {
-        Debug.Log("Quit process started...");
 
-        if (auth.CurrentUser != null)
-        {
-            string userId = auth.CurrentUser.UserId;
-            string quitTime = System.DateTime.Now.ToString();
+        if (leaderboardPanel != null) leaderboardPanel.SetActive(false);
 
-            
-            dbReference.Child("users").Child(userId).Child("lastQuitTime").SetValueAsync(quitTime).ContinueWithOnMainThread(task => {
-                if (task.IsCompleted)
-                {
-                    Debug.Log("Database updated. Transitioning to login...");
-                    ChangeToLoginScene();
-                }
-                else
-                {
-                    Debug.LogError("Firebase Update Failed: " + task.Exception);
-                    // Still change the scene so the user isn't stuck
-                    ChangeToLoginScene();
-                }
-            });
-        }
-        else
-        {
-            // If no user is logged in, just go back to the login page
-            ChangeToLoginScene();
-        }
+        if (settingsPanel != null) settingsPanel.SetActive(false);
+
+        if (mainMenusPanel != null) mainMenusPanel.SetActive(true);
+
+        
+
+        Debug.Log("Returned to Main Menu");
     }
 
-    private void ChangeToLoginScene()
+    // Existing Quit logic
+    public void QuitToLogin()
     {
-        // This closes the app if you're on a headset or build
-        // Application.Quit(); 
 
-        // This transitions to the login scene as requested
-        SceneManager.LoadScene(loginSceneName);
+        Debug.Log("Quitting to " + quitTargetSceneName);
 
-        // Stops the editor from playing so you can verify the quit action
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+        // This physically stops the current scene and loads the next one
+
+        SceneManager.LoadScene(quitTargetSceneName); 
     }
+
 }
+
+
+
+
+
