@@ -14,7 +14,7 @@ public class VRFirebaseManager : MonoBehaviour
     public TMP_Text statusText; 
 
     [Header("Scene Settings")]
-    public string nextSceneName = "Menu";
+    public string nextSceneName = "Raphael_menu";
 
     private FirebaseAuth auth;
     private DatabaseReference dbReference;

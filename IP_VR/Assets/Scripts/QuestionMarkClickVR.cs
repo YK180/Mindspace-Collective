@@ -4,15 +4,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class QuestionMarkClickVR : MonoBehaviour
 {
     public CustomerAI customer;
-    private XRSimpleInteractable interactable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable interactable;
 
     void Awake()
     {
         // Add XR Simple Interactable if not already present
-        interactable = GetComponent<XRSimpleInteractable>();
+        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
         if (interactable == null)
         {
-            interactable = gameObject.AddComponent<XRSimpleInteractable>();
+            interactable = gameObject.AddComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
         }
         
         // Subscribe to select events (when VR controller clicks/pokes)
