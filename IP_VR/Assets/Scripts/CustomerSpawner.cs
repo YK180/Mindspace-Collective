@@ -31,11 +31,24 @@ public class CustomerSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnInterval);
             
+            // Check if day is still active
+            if (DayTimeManager.Instance != null && !DayTimeManager.Instance.IsDayActive())
+            {
+                Debug.Log("Day has ended. Stopping customer spawns.");
+                yield break; // Stop spawning
+            }
+            
             if (currentCustomerCount < maxCustomers)
             {
                 SpawnRandomCustomer();
             }
         }
+    }
+    
+    public void StopSpawning()
+    {
+        StopAllCoroutines();
+        Debug.Log("Customer spawning stopped.");
     }
 
     public void SpawnRandomCustomer()
