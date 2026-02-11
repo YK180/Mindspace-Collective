@@ -9,8 +9,8 @@ public class MenuNavigation : MonoBehaviour
     public GameObject leaderboardPanel;
 
     [Header("Scene Transition (New Scene)")]
-    public string gameSceneName = "Raphael_game";
-    public string quitTargetSceneName = "Raphael_login"; // Name of your Login/Startup scene
+    public string gameSceneName = "GameScene";
+    public string quitTargetSceneName = "LoginScene"; // Name of your Login/Startup scene
 
     // --- PANEL TOGGLING ---
     
