@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderName: Strawberry Jam with Strawberries
   orderIcon: {fileID: 21300000, guid: c23114ba3c0d7a148bc28bd63f537a85, type: 3}
-  description: '- Spread strawberry jam - Evenly place 6 strawberry slices'
+  description: '- Spread strawberry jam         - Evenly place 6 strawberry slices'
+  price: 6

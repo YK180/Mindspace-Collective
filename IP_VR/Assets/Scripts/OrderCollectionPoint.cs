@@ -73,6 +73,13 @@ public class OrderCollectionPoint : MonoBehaviour
             if (showDebugMessages)
                 Debug.Log($"Customer {currentCustomer.name} received their order!");
             
+            // Add to score/revenue using the specific order's price
+            if (ScoreManager.Instance != null)
+            {
+                ToastOrder order = currentCustomer.GetCurrentOrder();
+                ScoreManager.Instance.AddOrder(order);
+            }
+            
             // Customer leaves
             currentCustomer.LeaveQueue();
             

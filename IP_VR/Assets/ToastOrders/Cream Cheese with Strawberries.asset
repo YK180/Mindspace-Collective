@@ -15,3 +15,4 @@ MonoBehaviour:
   orderName: Cream Cheese with Strawberries
   orderIcon: {fileID: 21300000, guid: e2114e194b2a5f047b5cdfd02fbef222, type: 3}
   description: '- Spread cream cheese - Evenly place 6 strawberry slices'
+  price: 6.5

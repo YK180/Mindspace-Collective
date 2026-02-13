@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderName: Sugar Butter with Honey and Butter
   orderIcon: {fileID: 21300000, guid: bb05e7d8d1f3f9e4e9f9f9042b2c8521, type: 3}
-  description: '- Spread sugar butter - Spread honey - Place one slice of butter'
+  description: '- Spread sugar butter       - Spread honey - Place one slice of butter'
+  price: 5.5
