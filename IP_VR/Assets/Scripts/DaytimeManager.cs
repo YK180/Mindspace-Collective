@@ -95,6 +95,12 @@ public class DayTimeManager : MonoBehaviour
         dayIsActive = false;
         Debug.Log($"Day ended at {currentHour}:00");
         
+        // Print order breakdown
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.PrintOrderBreakdown();
+        }
+        
         // Trigger end of day event
         onDayEnd?.Invoke();
         
