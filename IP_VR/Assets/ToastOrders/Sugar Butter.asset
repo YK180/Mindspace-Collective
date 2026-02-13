@@ -15,3 +15,4 @@ MonoBehaviour:
   orderName: Sugar Butter
   orderIcon: {fileID: 21300000, guid: 469b556ba80a9ff49bddd4820112c077, type: 3}
   description: '- Spread sugar butter'
+  price: 4

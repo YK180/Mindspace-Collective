@@ -15,3 +15,4 @@ MonoBehaviour:
   orderName: Peanut Butter
   orderIcon: {fileID: 21300000, guid: 439e56aa9b8fb2e44964d7ba03eb5100, type: 3}
   description: '- Spread peanut butter'
+  price: 3.5

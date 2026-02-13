@@ -6,4 +6,5 @@ public class ToastOrder : ScriptableObject
     public string orderName;
     public Sprite orderIcon; // Optional: icon for the toast type
     public string description; // e.g., "Avocado Toast", "Butter Toast", etc.
+    public float price = 5.0f; // Price for this specific toast
 }

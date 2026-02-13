@@ -15,3 +15,4 @@ MonoBehaviour:
   orderName: Chocolate and Banana
   orderIcon: {fileID: 21300000, guid: 5cd00d95b66334b4498fd51cebd6c2e9, type: 3}
   description: '- Spread chocolate sauce- Evenly place 6 banana slices'
+  price: 6

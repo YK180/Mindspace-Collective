@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderName: Honey
   orderIcon: {fileID: 21300000, guid: 90db132ae42ac0247a05f6d6d6840393, type: 3}
-  description: '- Spread honey'
+  description: -Spread honey
+  price: 4
