@@ -1,119 +1,76 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
+    public static string UserEmail = "Guest@email.com"; // Set during Login
 
     [Header("Scoring")]
     private int customersServed = 0;
     private float totalRevenue = 0f;
-    private Dictionary<string, int> toastOrderCounts = new Dictionary<string, int>(); // Track each toast type
-
-    [Header("UI References")]
-    public TextMeshProUGUI revenueText; // Display for current revenue
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
-    void Start()
-    {
-        UpdateRevenueDisplay();
-    }
-
-    // Updated to accept the specific order and use its price
     public void AddOrder(ToastOrder order)
     {
-        if (order == null)
-        {
-            Debug.LogWarning("Trying to add null order!");
-            return;
-        }
-
+        if (order == null) return;
         customersServed++;
         totalRevenue += order.price;
+        // Update your in-game revenue UI here
+    }
+
+    public void SaveScoreAtEndDay()
+    {
+        string displayName = UserEmail.Split('@')[0]; 
+        List<LeaderboardEntry> scores = LoadLeaderboard();
         
-        // Track this specific toast type
-        if (toastOrderCounts.ContainsKey(order.orderName))
-        {
-            toastOrderCounts[order.orderName]++;
-        }
-        else
-        {
-            toastOrderCounts[order.orderName] = 1;
-        }
+        scores.Add(new LeaderboardEntry { name = displayName, score = customersServed });
         
-        Debug.Log($"Order completed: {order.orderName} (+${order.price:F2}) | Total customers: {customersServed}, Total revenue: ${totalRevenue:F2}");
-        Debug.Log($"{order.orderName} count: {toastOrderCounts[order.orderName]}");
+        // Automatic Ranking: Sort by score (highest first)
+        scores.Sort((a, b) => b.score.CompareTo(a.score));
         
-        UpdateRevenueDisplay();
+        // Keep top 10 for a scrollable or larger list
+        if (scores.Count > 10) scores.RemoveRange(10, scores.Count - 10);
+
+        SaveLeaderboard(scores);
     }
 
-    void UpdateRevenueDisplay()
+    private void SaveLeaderboard(List<LeaderboardEntry> scores)
     {
-        if (revenueText != null)
+        for (int i = 0; i < scores.Count; i++)
         {
-            revenueText.text = $"${totalRevenue:F2}";
+            PlayerPrefs.SetString($"LeaderName_{i}", scores[i].name);
+            PlayerPrefs.SetInt($"LeaderScore_{i}", scores[i].score);
         }
+        PlayerPrefs.SetInt("LeaderCount", scores.Count);
+        PlayerPrefs.Save();
     }
 
-    // Getters for end of day stats
-    public int GetCustomersServed()
+    public List<LeaderboardEntry> LoadLeaderboard()
     {
-        return customersServed;
-    }
-
-    public float GetTotalRevenue()
-    {
-        return totalRevenue;
-    }
-    
-    // Get count of a specific toast type
-    public int GetToastCount(string toastName)
-    {
-        if (toastOrderCounts.ContainsKey(toastName))
+        List<LeaderboardEntry> scores = new List<LeaderboardEntry>();
+        int count = PlayerPrefs.GetInt("LeaderCount", 0);
+        for (int i = 0; i < count; i++)
         {
-            return toastOrderCounts[toastName];
+            scores.Add(new LeaderboardEntry {
+                name = PlayerPrefs.GetString($"LeaderName_{i}"),
+                score = PlayerPrefs.GetInt($"LeaderScore_{i}")
+            });
         }
-        return 0;
-    }
-    
-    // Get all toast counts (useful for end of day summary if you want it later)
-    public Dictionary<string, int> GetAllToastCounts()
-    {
-        return new Dictionary<string, int>(toastOrderCounts);
-    }
-    
-    // Print breakdown to console
-    public void PrintOrderBreakdown()
-    {
-        Debug.Log("=== ORDER BREAKDOWN ===");
-        foreach (KeyValuePair<string, int> entry in toastOrderCounts)
-        {
-            Debug.Log($"{entry.Key}: {entry.Value} orders");
-        }
-        Debug.Log($"Total Customers: {customersServed}");
-        Debug.Log($"Total Revenue: ${totalRevenue:F2}");
-        Debug.Log("======================");
+        return scores;
     }
 
-    // Reset for new day
-    public void ResetDay()
-    {
-        customersServed = 0;
-        totalRevenue = 0f;
-        toastOrderCounts.Clear();
-        UpdateRevenueDisplay();
+    [System.Serializable]
+    public class LeaderboardEntry {
+        public string name;
+        public int score;
     }
+
+
 }
