@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1965875469538028802}
   - component: {fileID: 8580328062409959873}
   - component: {fileID: 5934226132542976910}
-  - component: {fileID: 4201371715182710835}
   m_Layer: 0
   m_Name: strawberry_bowl
   m_TagString: Untagged
@@ -27,9 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2425060711877161969}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.946503, y: -0.9451599, z: -13.649353}
-  m_LocalScale: {x: 0.18177211, y: 0.2910433, z: 0.18177211}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.70291024, y: -0.94515085, z: 19.30306}
+  m_LocalScale: {x: 0.1817722, y: 0.2910433, z: 0.1817722}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3036137697418833302}
@@ -87,27 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4201371715182710835
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2425060711877161969}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 204.24261, y: 10.548212, z: 202.71594}
-  m_Center: {x: 0, y: -3.3809912, z: -0.00048446655}
 --- !u!1 &3844735096984857364
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,8 +110,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3844735096984857364}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13, y: 0, z: -14.8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.64938587, y: 1.1000037, z: 18.152393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -165,9 +143,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4882808509536437267}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.9, y: -2.2, z: -13.6}
-  m_LocalScale: {x: 25.32658, y: 0.9795875, z: 25.32658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.25058523, y: -1.5999854, z: 19.352404}
+  m_LocalScale: {x: 25.326586, y: 0.97958744, z: 25.326586}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3036137697418833302}
@@ -219,6 +197,7 @@ GameObject:
   - component: {fileID: 8831905669208823664}
   - component: {fileID: 4945464658657999218}
   - component: {fileID: 6284725972730331576}
+  - component: {fileID: 7903467449484283166}
   m_Layer: 0
   m_Name: Bowl2
   m_TagString: Untagged
@@ -234,9 +213,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6766652855663497086}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.649414, y: -11.904907, z: -13.649345}
-  m_LocalScale: {x: 0.1974118, y: 0.3324277, z: 0.1974118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.904896, z: 19.303059}
+  m_LocalScale: {x: 0.19741179, y: 0.3324277, z: 0.19741179}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3036137697418833302}
@@ -295,6 +274,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7903467449484283166
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766652855663497086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 195.56099, y: 26.779669, z: 195.56148}
+  m_Center: {x: -0.00014152993, y: -22.42226, z: -0.000018870658}
 --- !u!1 &6948571809200135197
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +306,6 @@ GameObject:
   - component: {fileID: 3036137697418833302}
   - component: {fileID: 5804752984402864023}
   - component: {fileID: 8348359489676590118}
-  - component: {fileID: 5351604389441811734}
   m_Layer: 0
   m_Name: Banana Bowl
   m_TagString: Untagged
@@ -322,8 +321,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6948571809200135197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.879293, y: 2.5931382, z: 1.2120376}
+  m_LocalRotation: {x: 0, y: 0.9999789, z: -0, w: -0.0064925943}
+  m_LocalPosition: {x: 2.133987, y: 0.8009999, z: 1.7889}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -332,7 +331,7 @@ Transform:
   - {fileID: 6160966225494877160}
   - {fileID: 5571597513716254115}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.744, z: 0}
 --- !u!54 &5804752984402864023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -487,24 +486,3 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!65 &5351604389441811734
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948571809200135197}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

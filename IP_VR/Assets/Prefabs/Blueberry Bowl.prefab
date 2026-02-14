@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7686152792931606003}
   - component: {fileID: 3918311023330310888}
   - component: {fileID: 2744338924237109122}
+  - component: {fileID: 2840867968009990190}
   m_Layer: 0
   m_Name: Bowl2
   m_TagString: Untagged
@@ -26,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290016072249989472}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.302979, y: -11.904907, z: 0}
-  m_LocalScale: {x: 0.1974118, y: 0.3324277, z: 0.1974118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.904913, z: 19.303047}
+  m_LocalScale: {x: 0.19741179, y: 0.3324277, z: 0.19741179}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5551903181346941803}
@@ -87,6 +88,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2840867968009990190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290016072249989472}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 195.56091, y: 31.680017, z: 195.56142}
+  m_Center: {x: -0.0002641892, y: -19.971958, z: 0.0002924952}
 --- !u!1 &461347787363337136
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,8 +133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461347787363337136}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6970167, y: 0, z: 19.303047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -129,7 +151,6 @@ GameObject:
   - component: {fileID: 5615865347873596383}
   - component: {fileID: 2843487990741780940}
   - component: {fileID: 3053700943842185948}
-  - component: {fileID: 718290427753848771}
   m_Layer: 0
   m_Name: strawberry_bowl
   m_TagString: Untagged
@@ -145,8 +166,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271423130241279679}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.005844, y: -0.9451599, z: -0.0000076293945}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.702858, y: -0.94515383, z: 19.303047}
   m_LocalScale: {x: 0.18177211, y: 0.2910433, z: 0.18177211}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -205,27 +226,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &718290427753848771
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271423130241279679}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 204.24261, y: 10.548212, z: 202.71594}
-  m_Center: {x: 0, y: -3.3809912, z: -0.00048446655}
 --- !u!1 &1451534866893189951
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +237,6 @@ GameObject:
   - component: {fileID: 5551903181346941803}
   - component: {fileID: 3369392792281727589}
   - component: {fileID: 5398361140732400305}
-  - component: {fileID: 3402726106630435637}
   m_Layer: 0
   m_Name: Blueberry Bowl
   m_TagString: Untagged
@@ -253,8 +252,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451534866893189951}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9443016, y: 2.5931382, z: 1.0755441}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 2.4240298, y: 0.368, z: 1.6670306}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -263,7 +262,7 @@ Transform:
   - {fileID: 7607463083543413608}
   - {fileID: 4375561740867932400}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!54 &3369392792281727589
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -418,27 +417,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!65 &3402726106630435637
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451534866893189951}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8633047977828058290
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,9 +443,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8633047977828058290}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.2, y: -2.9, z: 0}
-  m_LocalScale: {x: 25.643, y: 1.044106, z: 25.643}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.102996826, y: -1.4999986, z: 19.303047}
+  m_LocalScale: {x: 25.643, y: 1.0441061, z: 25.643}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5551903181346941803}
